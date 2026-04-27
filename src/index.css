@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --shadow-bento: 4px 4px 0px 0px #000000;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-[#FFFBFA] text-slate-900;
+  }
+}
+
+@layer components {
+  .bento-card {
+    @apply bg-white border-2 border-black rounded-[24px] shadow-bento p-6 overflow-hidden flex flex-col transition-all;
+  }
+}
